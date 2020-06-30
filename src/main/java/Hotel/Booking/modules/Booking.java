@@ -1,6 +1,7 @@
 package Hotel.Booking.modules;
 
-import javax.persistence.Id;
+
+import org.springframework.data.annotation.Id;
 
 public class Booking {
 
