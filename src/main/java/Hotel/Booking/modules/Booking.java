@@ -18,4 +18,17 @@ public class Booking {
         this.email = email;
         this.checked = false;
     }
+
+    public Booking(){
+
+    }
+
+    @Override
+    public String toString() {
+        return  String.format(
+                "Customer[id=%s, name='%s', email='%s', checked='%s']",
+                id, name, email, checked);
+
+    }
+
 }
