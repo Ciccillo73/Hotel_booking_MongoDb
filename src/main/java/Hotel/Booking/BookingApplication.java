@@ -35,5 +35,14 @@ public class BookingApplication implements CommandLineRunner {
 			System.out.println(booking);
 		}
 		System.out.println();
+
+		//fetch individual booking
+
+		System.out.println("Customer found with findByName('Antonio Wuallera'): ");
+		System.out.println("----------------------------------------------------");
+		for (Booking booking: bookingRepo.findByName("Antonio Wuallera")){
+			System.out.println(booking);
+		}
+		System.out.println();
 	}
 }
